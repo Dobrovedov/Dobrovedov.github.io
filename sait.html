@@ -3,25 +3,80 @@
 <head> <!---->
 	<meta charset="UTF-8"> <!-- включает поддержку русского языка во 
 		всех браузерах --> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Обратная совместимость со старым браузером Експлоер-->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/> <!--мобилки-->
 
 	<meta name="author" content="Dobrovedov"> <!-- где-то будет автор-->
 	<meta name="description" content="Данная страница посвещена второй лабе"> <!-- Краткое описание сайта в поисковеке-->
 	<link rel="shortcut icon" href="vonline.jpg"> <!-- значок в браузере на вкладке--> 
 
 	<title>Первая Лабораторная</title> <!-- шапка в браузере--> 
-
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background: #FFD7D7">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
+<div class="overflow-hidden text-md-center container-fluid" style="background-repeat: no-repeat; background-size: cover; background-image: url(http://pic.xenomorph.ru/2011-09/1317009833_51181-3000x2000.jpg)"><!-- первая штука чтобы текст не вылезал из блока-->
+    <div class="col my-5 "><!--отступы сверху и снизу максимум 5-->
+        <h1 class="display-1 font-weight-normal" style = "color: rgb(165, 42, 42);">
+            Вам всем ж...
+        </h1>
+        <p class="lead font-weight-bolder" style = "color: rgb(210, 180, 140);">
+            женские трусы!!!
+        </p>
+        <a class="btn btn-danger" href="#Contact" style = "color: rgb(255, 250, 250);">Купи первый</a>
+        </div>
+</div>
+<div class="container m-auto text-md-center"> <!--требуются при использовании сеточной системы по умолчанию, лучше для глаз автоматические отступы по бокам-->
+    <div class="row mx-auto"><!--класс для горизонтального центрирования контента на уровне блоков фиксированной ширины-->
+        <div class="col-sm mr-1 mt-3" style="background: #FA8072"><!-- действия для всех типов устройств одинаковые так как используется sm-->
+            <h3 class="font-weight-bolder">Качество</h2>
+            <p class="font-italic">Наши трусики самые мягкие на рынке, никогда не натирают кожу и не проявляют раздражения, даже в самых откровенных местах</p>
+        </div>
+        <div class="col-sm mr-1 mt-3" style="background: #DB7093">
+            <h3 class="font-weight-bolder">Дизайн</h2>
+            <p class="font-italic">Кружева на нашем продукте не оставят ни одного мужчину равнодушным к вашим формам</p>
+        </div>
+        <div class="col-sm mt-3" style="background: #CD5C5C">
+            <h3 class="font-weight-bolder">Гарантия</h2>
+            <p class="font-italic">Мы даём гарантию на товар 2 недели. Не благодарите</p>
+        </div>
+    </div>
+</div>
+  	<hr>
+    <div class="row  text-md-center"><!-- разбиваем на блоки-->
+    	<div class="col-sm-4 4">
+            <img class="img-fluid mx-auto"
+                 src="https://images.pexels.com/photos/2059087/pexels-photo-2059087.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            role="img" width="500" height="500">
+        </div>
+        <div class="col-sm-4">
+            <h2 class="font-weight-normal">Кто мы такие?</h2>
+            <p class="font-weight-normal">Меня зовут Немеровский Александр и я создал эту фирму. Когда моя жена купила себе новые трусы, я сразу понял, так дело не пойдёт! Они были ужасные и не приятные и поэтому мы создали свою копманию по производству женских трусиков. Каждая новая пара протестированна моей женой, поэтому мы вручаемся за качество товара!</p>
+        </div>
+        <div class="col-sm-4 ">
+            <img class="img-fluid mx-auto"
+                 src="https://images.pexels.com/photos/2059087/pexels-photo-2059087.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            role="img" width="500" height="500">
+        </div>
+    </div>
+    <hr noshade size="4">
+<div class="container text-md-center">
+    <form class="col-sm-6 m-auto" id="Contact">
+        <h4 class="font-weight-normal my-4">Закажи сейчас</h4>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="trysiki@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your order</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><!--высота поля ввода-->
+            <a class="btn btn-light my-4" href="#">Send</a>
+        </div>
+    </form>
+</div>
 </body>
-
-
-<footer>
-	
-
-</footer>
 </html>
